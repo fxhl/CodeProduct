@@ -15,7 +15,7 @@ namespace CodeSite.system.controller
         public void ViewList(HttpContext context)
         {
             context.Response.ContentType = "text/html";
-            string html = RazorHandler.ParseRazor(context, "../View/sysTables.cshtml");
+            string html = RazorHandler.ParseRazor(context, "../View/index.cshtml");
             context.Response.Write(html);
         }
     }
